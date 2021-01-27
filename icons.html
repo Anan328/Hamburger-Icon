@@ -1,0 +1,103 @@
+<html>
+<head>
+<title> Tray Icon </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+body{
+padding:0;
+margin:0;
+}
+.block{
+position:relative;
+background:cyan;
+max-width:27%;
+height:50%;
+margin:5% 32%;
+border-radius:15px 0px 0px 15px / 10px 0px 0px 10px;
+font-family:cursive;
+}
+h4{
+margin-top:0;
+padding:0;
+color:#fff;
+font-family:sans-serif;
+}
+#tray i{
+margin:20px;
+padding:0.1%;
+cursor:pointer;
+}
+#tray{
+top:0;
+right:0;
+position:absolute;
+display:none;
+transition: all 0.5s;
+flex-direction:column;
+background:#D3D3D3;
+transform: translateX(100%);
+width:20%;
+border-radius:0px 15px 15px 0px / 0px 10px 10px 0px;
+height:100%;
+}
+.brg{
+position:absolute;
+top:0;
+right:0;
+cursor:pointer;
+margin-top:7px;
+padding-right:10px;;
+}
+.fa-facebook{
+color:#1877f2;
+}
+.fa-instagram{
+color:#c32aa3;
+}
+.fa-twitter{
+color:#1da1f2;
+}
+.fa-linkedin{
+color:#0e76a8;
+}
+.fa-github{
+color:#000000;
+}
+</style>
+</head>
+<body>
+<div class="block">
+<center><h3> Tray icons </h3> </center>
+<a  class="brg" onclick="show()">
+<i class="fa fa-bars"> </i>
+</a>
+<br>
+<div id="tray">
+<i class="fa fa-facebook"> </i>
+<i class="fa fa-instagram"> </i>
+<i class="fa fa-twitter"> </i>
+<i class="fa fa-linkedin"> </i>
+<a href="http://github.com/anan328" target="_blank">
+<i class="fa fa-github"> </i>
+</a>
+</div>
+<h4> 
+Click on the menu on this block  to launch a  tray of icons.<br><br>
+CSS , HTML  and JavaScript has been used in  this regard. 
+<br> <br>
+Clicking on any of the icon will land you nowhere this is just for refrence purpose.
+</h4>
+</div>
+<script>
+function show(){
+	var x = document.getElementById("tray");
+	if(x.style.display=="none"){
+		x.style.display="flex";
+		}
+	else{
+		x.style.display="none";
+		}
+}
+</script>
+</body>
+</html>
